@@ -9,7 +9,7 @@ function Rout() {
     <>
       <Router>
         <div className="px-3 py-2 bg-purple-500 text-white grid">
-        <img src=".\images\logo.png" alt="logo" />
+        <img src="./images/logo.png" alt="logo" className="w-[3rem]"/>
           <ul className="flex justify-evenly">
             <li className="mx-4 ">
               <Link to="/">Home</Link>
