@@ -7,7 +7,12 @@ import {
     Avatar,
     Tooltip,
   } from "@material-tailwind/react";
-   
+  const items = [
+    'Bottles',
+    'Cups',
+    'Gift Hampers',
+    'T-Shirts'
+  ];
   export default function CardReader() {
     return (
       <Card className="max-w-[24rem] overflow-hidden">
@@ -24,7 +29,8 @@ import {
         </CardHeader>
         <CardBody>
           <Typography variant="h4" color="blue-gray">
-            UI/UX Review Check
+            UI/UX Review Check 
+            {items.map(item => <>{item}</>)}
           </Typography>
           <Typography variant="lead" color="gray" className="mt-3 font-normal">
             Because it&apos;s about motivating the doers. Because I&apos;m here to
@@ -57,3 +63,5 @@ import {
       </Card>
     );
   }
+
+  
