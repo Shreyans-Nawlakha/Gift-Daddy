@@ -1,4 +1,4 @@
-import CardReader from "./card"
+// import CardReader from "./card"
 import Sample from "./sample";
 export default function Home() {
     return (

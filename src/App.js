@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <Rout />
-      <Sample />
+      {/* <Sample /> */}
     </div>
   );
 }

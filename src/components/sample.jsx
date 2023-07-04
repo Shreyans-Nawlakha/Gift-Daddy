@@ -12,8 +12,7 @@ import {
 export default function Sample() {
   return (
     <>
-      {Menu.map((item) => 
-        {const { id, type, category, description } = item;
+      {Menu.map(({id, type, category, description}) =>
         <Card className="max-w-[24rem] overflow-hidden mx-[1rem]" key={id}>
           <CardHeader
             floated={false}
@@ -36,6 +35,7 @@ export default function Sample() {
             <Typography className="font-normal">{category}</Typography>
           </CardFooter>
         </Card>
-      }</>
+        )}   
+    </>
   )
 };
